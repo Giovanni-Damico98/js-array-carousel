@@ -17,13 +17,23 @@
       integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div id="carousel">
+        <i id="prev" class="bi bi-arrow-left-circle"></i>
         <div class="gallery">
-          <img src="img/01.webp" alt="img1" />
+          <img src="img/01.webp" class="active" alt="img1" />
+          <img src="img/02.webp" alt="img2" />
+          <img src="img/03.webp" alt="img3" />
+          <img src="img/04.webp" alt="img4" />
+          <img src="img/05.webp" alt="img5" />
         </div>
+        <i id="next" class="bi bi-arrow-right-circle"></i>
       </div>
     </div>
     <script src="js/script.js"></script>
