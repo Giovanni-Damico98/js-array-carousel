@@ -7,7 +7,7 @@
 /* Utils */
 .container {
   max-width: 1200px;
-  margin: 6rem auto;
+  margin: 3rem auto;
 }
 
 /* Carousel */
@@ -56,4 +56,35 @@
 
 #next {
   right: -10%;
+}
+
+/* Thumbnails */
+
+#thumbnails {
+  width: 700px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#thumbnails img {
+  height: 100%;
+  width: 19%;
+  border-radius: 10px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#thumbnails img:hover {
+  transform: translateY(-10px);
+  filter: grayscale(0.5);
+  box-shadow: 0 0 10px goldenrod;
+}
+
+#thumbnails img.active {
+  filter: grayscale(0);
+  box-shadow: 0 0 10px dodgerblue;
 }
